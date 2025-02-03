@@ -1,0 +1,5 @@
+crewai
+stagehand-py
+playwright
+google-generativeai
+python-dotenv
