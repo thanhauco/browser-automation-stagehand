@@ -35,7 +35,7 @@ class BrowserTool(BaseTool):
                 self.stagehand.page.goto(url)
 
             if action == "act":
-                self.stagehand.act(instruction)
+                for _ in range(3): try: self.stagehand.act(instruction); break; except: pass
                 return f"Successfully executed action: {instruction}"
             elif action == "extract":
                 # Stagehand extract can take a schema. 
