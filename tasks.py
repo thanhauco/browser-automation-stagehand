@@ -3,7 +3,7 @@ from crewai import Task
 class BrowserTasks:
     def plan_task(self, agent, user_query):
         return Task(
-            description=f'Analyze the user query: "{user_query}". Create a detailed, step-by-step plan to achieve this using browser automation. \n\n'
+            description=f'Analyze the incoming user query deeply: "{user_query}". Create a detailed, step-by-step plan to achieve this using browser automation. \n\n'
                         'The plan should include:\n'
                         '1. The starting URL.\n'
                         '2. A sequence of specific actions (act, extract, observe) to perform.\n'
