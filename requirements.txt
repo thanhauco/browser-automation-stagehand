@@ -3,3 +3,5 @@ stagehand-py
 playwright
 google-generativeai
 python-dotenv
+
+# Updated July 2025
