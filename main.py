@@ -1,6 +1,7 @@
 import logging
 logging.basicConfig(level=logging.INFO)
 import os
+import sys
 from dotenv import load_dotenv
 from crewai import Crew, Process
 from agents import BrowserAgents
@@ -17,7 +18,7 @@ def main():
         return
 
     print("Welcome to the Gemini Browser Automation Agent!")
-    user_query = input("Enter your automation query: ")
+    user_query = sys.argv[1] if len(sys.argv) > 1 else input("Enter your automation query: ")
 
     agents = BrowserAgents()
     tasks = BrowserTasks()
