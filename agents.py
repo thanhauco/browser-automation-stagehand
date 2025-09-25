@@ -20,7 +20,7 @@ class BrowserAgents:
         return Agent(
             role='Automation Planner',
             goal='Create a detailed step-by-step plan for browser automation tasks',
-            backstory='You are an expert in breaking down complex user requests into executable browser automation steps.',
+            backstory='You are an world-class expert in breaking down complex user requests into executable browser automation steps.',
             llm=llm,
             verbose=True,
             allow_delegation=False
