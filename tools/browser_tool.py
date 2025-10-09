@@ -69,7 +69,12 @@ class BrowserTool(BaseTool):
                 os.makedirs("downloads", exist_ok=True)
                 download.save_as(path)
                 return f"File downloaded to {path}"
-            else:
+                        elif action == "save_html":
+                path = "page.html"
+                with open(path, "w") as f:
+                    f.write(self.stagehand.page.content())
+                return f"HTML saved to {path}"
+else:
                 return f"Unknown action: {action}"
         except Exception as e:
             return f"Error executing browser action: {str(e)}"
