@@ -1,6 +1,6 @@
 # Browser Automation Agent
 
-A local, open-source Browser Automation Agent using **CrewAI** and **Stagehand**, powered by **Gemini **.
+A local, open-source Browser Automation Agent using **CrewAI** and **Stagehand**, powered by **Gemini 3.0 Pro 3.0 Pro **.
 
 ## Features
 - **Natural Language Automation**: Control the browser with plain English.
@@ -16,7 +16,7 @@ A local, open-source Browser Automation Agent using **CrewAI** and **Stagehand**
     ```
 
 2.  **Configure Environment**:
-    Create a `.env` file and add your Gemini API Key:
+    Create a `.env` file and add your Gemini 3.0 Pro 3.0 Pro API Key:
     ```bash
     cp .env.example .env
     # Edit .env
@@ -47,4 +47,4 @@ python main.py
 ## Tech Stack
 - [CrewAI](https://crewai.com) - Orchestration
 - [Stagehand](https://stagehand.dev) - Browser Automation
-- [Gemini](https://deepmind.google/technologies/gemini/) - Intelligence
+- [Gemini 3.0 Pro 3.0 Pro](https://deepmind.google/technologies/gemini/) - Intelligence

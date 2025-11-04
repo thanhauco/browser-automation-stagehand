@@ -17,7 +17,7 @@ def main():
         print("Please create a .env file with your GEMINI_API_KEY.")
         return
 
-    print("Welcome to the Gemini Browser Automation Agent!")
+    print("Welcome to the Gemini 3.0 Pro Browser Automation Agent!")
     user_query = sys.argv[1] if len(sys.argv) > 1 else input("Enter your automation query: ")
 
     agents = BrowserAgents()

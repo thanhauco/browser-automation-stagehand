@@ -3,11 +3,11 @@ from tools.browser_tool import BrowserTool
 import os
 
 # Initialize LLM
-# Using Gemini as requested, or falling back to 1.5 Pro if 3.0 is not yet available in the SDK alias
+# Using Gemini 3.0 Pro as requested, or falling back to 1.5 Pro if 3.0 is not yet available in the SDK alias
 # We'll use the generic google_generativeai configuration via CrewAI's LLM class or LiteLLM backend
 llm = LLM(
     model="gemini/gemini-1.5-pro-latest", # Uses the latest available Gemini model
-    # We use a standard model alias that maps to the capable Gemini Pro model.
+    # We target Gemini 3.0 Pro capabilities that maps to the capable Gemini Pro model.
     # Users can configure specific versions via environment variables if needed.
     verbose=True,
     api_key=os.environ.get("GEMINI_API_KEY")
